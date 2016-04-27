@@ -7,11 +7,13 @@
   <body>
     <header class="main-header">        <!--шапка сайта-->
       <div class="container">           <!--центровщик-->
-        <div class="index-logo">        <!--рисунок лого-->
-          <img src="" width="" height="" alt="Барбершоп «Бородинский»"> <!--ВСТАВИТЬ РАЗМЕРЫ И АДРЕС КАРТИНКИ-->
-        </div>
         <nav class="main-navigation">   <!--контейнер списка навигации по сайту-->
           <ul>
+            <li>
+              <a class="index-logo" href="#">
+                <img src="" width="" height="" alt="Барбершоп «Бородинский»">      <!--рисунок лого-->
+              </a>
+            </li>
             <li>
               <a href="#">Информация</a>
             </li>
@@ -34,90 +36,118 @@
         </div>
       </div>
     </header>
-    <main class="container">    <!--основное содержание страницы-->
+    <main class="container">        <!--основное содержание страницы-->
       <h1>Средства для ухода</h1>
-      <div class="breadcrumbs"> <!--хлебные крошки-->
+      <div class="breadcrumbs">     <!--хлебные крошки-->
         <ul>
-          <li>Главная</li>
-          <li>Магазин</li>
-          <li>Средства для ухода</li>
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <span>Средства для ухода</span>
+          </li>
         </ul>
       </div>
-      <form>   <!--связываем списки с кнопкой-->
+      <form>                       <!--связываем списки с кнопкой-->
         <div class="producers">    <!--спиок производителей-->
          <h2>Производители:</h2>
-         <div class="pducers-list">
-           <label><input type="checkbox" checked/>Baxter of California</label>
-           <label><input type="checkbox" />Mr Natty</label>
-           <label><input type="checkbox" checked/>Suavecito</label>
-           <label><input type="checkbox" />Malin-Goetz</label>
-           <label><input type="checkbox" />Murray's</label>
-           <label><input type="checkbox" checked/>American Crew</label>
+         <div class="producers-list">
+           <label for="baxter"><input type="checkbox" id="baxter" checked/>Baxter of California</label>
+           <label for="natty"><input type="checkbox" id="natty"/>Mr Natty</label>
+           <label for="suavectio"><input type="checkbox" id="suavectio" checked/>Suavecito</label>
+           <label for="malin"><input type="checkbox" id="malin"/>Malin-Goetz</label>
+           <label for="murray"><input type="checkbox" id="murray"/>Murray's</label>
+           <label for="american"><input type="checkbox" id="american" checked/>American Crew</label>
          </div>
         </div>
         <div class="items">        <!--Группы товаров-->
           <h2>Группы товаров:</h2>
           <div class="items-groups">
-            <label><input type="radio">Бритвенные принадлежности</label>
-            <label><input type="radio" checked>Средства для ухода</label>
-            <label><input type="radio">Аксессуары</label>
+            <label for="shave"><input type="radio" name="item-group" id="shave">Бритвенные принадлежности</label>
+            <label for="care"><input type="radio" name="item-group" id="care" checked>Средства для ухода</label>
+            <label for="accessories"><input type="radio" name="item-group" id="accessories">Аксессуары</label>
           </div>
         </div>
         <input type="submit" value="Показать"/>
       </form>
 
       <div class="products">  <!--Продукты-->
-        <article>
-          <img src=""  width="150" height="100" alt="Набор для путешествий"> <!--ВСТАВИТЬ РАЗМЕРЫ И АДРЕС КАРТИНКИ-->
-          <p>Набор для путешествий <br>
-             "Baxter of California"</p>
-          <div class="price">2 900 руб.</div>
-          <button class="to-cart">Купить</button>
+        <article class="product">
+          <img class="product-image" src=""  width="150" height="100" alt="Набор для путешествий"> <!--ВСТАВИТЬ РАЗМЕРЫ И АДРЕС КАРТИНКИ-->
+          <p class="product-name">Набор для путешествий "Baxter of California"</p>
+          <div class="product-price">2 900 руб.</div>
+          <a href="#" class="product-buy">Купить</a>
         </article>
-        <article>
-          <img src=""  width="150" height="100" alt="Увлажняющий кондиционер"> <!--ВСТАВИТЬ РАЗМЕРЫ И АДРЕС КАРТИНКИ-->
-          <p>Увлажняющий кондиционер<br>
-            "Baxter of California"</p>
-          <div class="price">750 руб.</div>
-          <button class="to-cart">Купить</button>
+        <article class="product">
+          <img class="product-image" src=""  width="150" height="100" alt="Увлажняющий кондиционер"> <!--ВСТАВИТЬ РАЗМЕРЫ И АДРЕС КАРТИНКИ-->
+          <p class="product-name">Увлажняющий кондиционер "Baxter of California"</p>
+          <div class="product-price">750 руб.</div>
+          <a href="#" class="product-buy">Купить</a>
         </article>
-        <article>
-          <img src=""  width="150" height="100" alt="Гель для волос"> <!--ВСТАВИТЬ РАЗМЕРЫ И АДРЕС КАРТИНКИ-->
-          <p>Гель для волос<br>
-            "Suavecito"</p>
-          <div class="price">290 руб.</div>
-          <button class="to-cart">Купить</button>
+        <article class="product">
+          <img class="product-image" src=""  width="150" height="100" alt="Гель для волос"> <!--ВСТАВИТЬ РАЗМЕРЫ И АДРЕС КАРТИНКИ-->
+          <p class="product-name">Гель для волос "Suavecito"</p>
+          <div class="product-price">290 руб.</div>
+          <a href="#" class="product-buy">Купить</a>
         </article>
-        <article>
-          <img src=""  width="150" height="100" alt="Глина для укладки волос"> <!--ВСТАВИТЬ РАЗМЕРЫ И АДРЕС КАРТИНКИ-->
-          <p>Глина для укладки волос<br>
-            "American Crew"</p>
-          <div class="price">500 руб.</div>
-          <button class="to-cart">Купить</button>
+        <article class="product">
+          <img class="product-image" src=""  width="150" height="100" alt="Глина для укладки волос"> <!--ВСТАВИТЬ РАЗМЕРЫ И АДРЕС КАРТИНКИ-->
+          <p class="product-name">Глина для укладки волос "American Crew"</p>
+          <div class="product-price">500 руб.</div>
+          <a href="#" class="product-buy">Купить</a>
         </article>
-        <article>
-          <img src=""  width="150" height="100" alt="Гель для волос"> <!--ВСТАВИТЬ РАЗМЕРЫ И АДРЕС КАРТИНКИ-->
-          <p>Гель для волос<br>
-            "Baxter of California"</p>
-          <div class="price">300 руб.</div>
-          <button class="to-cart">Купить</button>
+        <article class="product">
+          <img class="product-image" src=""  width="150" height="100" alt="Гель для волос"> <!--ВСТАВИТЬ РАЗМЕРЫ И АДРЕС КАРТИНКИ-->
+          <p class="product-name">Гель для волос "Baxter of California"</p>
+          <div class="product-price">300 руб.</div>
+          <a href="#" class="product-buy">Купить</a>
         </article>
-        <article>
-          <img src=""  width="150" height="100" alt="Набор для бритья"> <!--ВСТАВИТЬ РАЗМЕРЫ И АДРЕС КАРТИНКИ-->
-          <p>Набор для бритья<br>
-            "Baxter of California"</p>
-          <div class="price">3 900 руб.</div>
-          <button class="to-cart">Купить</button>
+        <article class="product">
+          <img class="product-image" src=""  width="150" height="100" alt="Набор для бритья"> <!--ВСТАВИТЬ РАЗМЕРЫ И АДРЕС КАРТИНКИ-->
+          <p class="product-name">Набор для бритья "Baxter of California"</p>
+          <div class="product-price">3 900 руб.</div>
+          <a href="#" class="product-buy">Купить</a>
         </article>
       </div>
-      <div class="pager">
-       <a class="page" href="#">1</a>  <!--ВСТАВИТЬ АДРЕС ССЫЛКИ-->
-       <a class="page" href="#">2</a>  <!--ВСТАВИТЬ АДРЕС ССЫЛКИ-->
-       <a class="page" href="#">3</a>  <!--ВСТАВИТЬ АДРЕС ССЫЛКИ-->
-       <a class="page" href="#">4</a>  <!--ВСТАВИТЬ АДРЕС ССЫЛКИ-->
+      <div class="item-list">
+        <ul class="pager">
+          <li class="pager-item">
+            <a class="page" href="#">1</a>   <!--ВСТАВИТЬ АДРЕС ССЫЛКИ-->
+          </li>
+          <li class="pager-item">
+             <span class="page" >2</span>    <!--Текущая страница-->
+          </li>
+          <li class="pager-item">
+             <a class="page" href="#">3</a>  <!--ВСТАВИТЬ АДРЕС ССЫЛКИ-->
+          </li>
+          <li class="pager-item">
+             <a class="page" href="#">4</a>  <!--ВСТАВИТЬ АДРЕС ССЫЛКИ-->
+          </li>
+        </ul>
       </div>
     </main>
-
-
+    <footer class="main-footer">             <!--Подвал сайта-->
+      <div class="container">                <!--центровщик-->
+        <section class="footer-contacts">    <!--Контакты-->
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <a href="#">Как нас найти?</a><br>
+          Телефон: +7 (812) 666-02-66
+        </section>
+        <section class="footer-social">      <!--Социальные сети-->
+          <p>Давайте дружить!</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-copyright">   <!--Авторы-->
+          <p>Разработано:</p>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
