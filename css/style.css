@@ -1,0 +1,32 @@
+body {
+  font-family: "PT Sans Narrow", "Roboto", "sans-serif";
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: gray;
+}
+/* СТИЛИ ТЕКСТА */
+nav {
+  font-size: 16pt;
+  line-height: 20pt;
+}
+.features-name, h2 {
+  font-size: 30pt;
+  line-height: 42pt;
+}
+p, a, button {
+  font-size: 14pt;
+  line-height: 24pt;
+}
+a {
+  text-decoration: none;
+}
+/* ЦВЕТА ТЕКСТА*/
+.index-content, .breadcrumbs a {
+  color: #000000;
+}
+nav, a, button, .main-footer {
+  color: #ffffff;
+}
+.features {
+  color: #f7f4f1;
+}
